@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expresiones Regulares</title>
+</head>
+<body>
+
+
+    <script >
+        let regex = /forma/ 
+        let str = "forma alguna forma de hacer esto "
+        imprimir(str,regex);
+        // Encontrará en este caso si hay una coincidencia en el texto con la palabra /forma/
+
+
+        regex = /[ia]/
+        //Al poner corchetes buscará si hay o no una de esas coincidencias
+        //En este caso buscará la letra "i" o letra "a" y si no está
+        //Devolverá false y Null en el caso de Match
+        //También se pueden usar rangos y numeros como /[0-3]/ encontrará los numeros del 0 al 3
+
+        str = "Como estuvo?"
+        imprimir(str, regex)
+
+        
+        
+
+        function imprimir (str,regex){
+            console.log(regex.test(str))
+            console.log(str.match(regex))
+        }
+    </script>
+</body>
+</html>
