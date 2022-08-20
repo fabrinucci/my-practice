@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>Cats App</h1>
+
+  <section class="section" id="randomCats">
+    <h2>Random cats</h2>
+    <div class="card-group">
+      <article>
+        <img id="img1" src="" alt="random cat">
+        <button class="btn" onclick="saveToFavorite()">Save to favorites</button>
+      </article>
+      
+      <article>
+        <img id="img2" src="" alt="random cat">
+        <button class="btn">Save Cat</button>
+      </article>
+      
+      <article>
+        <img id="img3" src="" alt="random cat">
+        <button class="btn">Save Cat</button>
+      </article>
+    </div>  
+  
+    <button class="btn-reload" id="button" onclick="randomCats()">Reload</button>
+  </section>
+
+  <section class="section" id="favorites">
+    <h2>Favorite cats</h2>
+    <article>
+      <img id="img3" src="" alt="random cat">
+      <button class="btn">Remove from favorites</button>
+    </article>  
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
