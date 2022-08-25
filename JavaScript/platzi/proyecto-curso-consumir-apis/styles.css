@@ -1,75 +1,43 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
-h1 {
-  font-size: 40px;
-  text-align: center;
-  margin: 30px;
+html {
+  margin: 0;
+  font-family: 'Anek Telugu', sans-serif;
 }
 
-h2 {
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.section {
-  padding: 60px 0;
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.card-group {
+header {
+  background-color: rgb(9, 84, 170);
+  height: 4rem;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   align-items: center;
-  box-shadow: 5px solid rgba(0, 0, 0, .2);
-  background-color: #87878a;
-  border-radius: 10px;
-  padding: 50px 30px;
+  justify-content: center;
 }
 
-.card-group > article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#random-cats, #favorite-cats{
+  width: 100vw;
+  margin-top: .5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: stretch;
+  align-items: stretch;
+  gap: 1rem;
+
 }
 
-.card-group > article > img {
-  width: 170px;
-  height: 150px;
-  border: 2px solid rgba(0, 0, 0, .2);
-  border-radius: 10%;
+.random-cat, .favorite-cat{
+  width: 100%;
+  height: minmax(250px,1fr);
+  margin: 0 .5rem 0 .5rem;
 }
 
-.btn {
-  background-color: #484848;
-  color: #fefefe;
-  font-size: 15px;
-  padding: 10px;
-  border: none;
-  border-radius: 7px;
-  margin-top: 20px;
-  cursor: pointer;
-  transition: all .4s ease-out;
+.random-cat img, .favorite-cat img {
+  width: calc(100% - 1rem);
+  aspect-ratio: 1;
+  object-fit: cover;
 }
 
-.btn:hover {
-  background-color: #2c2c2c;
-}
-
-.btn-reload {
-  background-color: #151790;
-  color: #fefefe;
-  margin-top: 20px;
-  padding: 15px;
-  border: none;
-  border-radius: 7px;
-  cursor: pointer;
-  transition: all .4s ease-out;
+.random-cat button, .favorite-cat button{
+  width: calc(100% - 1rem);
 }

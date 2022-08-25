@@ -1,46 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cats App</title>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Cats App</h1>
+    </header>
 
-  <h1>Cats App</h1>
+    <section id="random-cats">
+    </section>
+    <button>Reload</button>
 
-  <section class="section" id="randomCats">
-    <h2>Random cats</h2>
-    <div class="card-group">
-      <article>
-        <img id="img1" src="" alt="random cat">
-        <button class="btn" onclick="saveToFavorite()">Save to favorites</button>
-      </article>
-      
-      <article>
-        <img id="img2" src="" alt="random cat">
-        <button class="btn">Save Cat</button>
-      </article>
-      
-      <article>
-        <img id="img3" src="" alt="random cat">
-        <button class="btn">Save Cat</button>
-      </article>
-    </div>  
-  
-    <button class="btn-reload" id="button" onclick="randomCats()">Reload</button>
-  </section>
+    <h2>Cats favorites</h2>
 
-  <section class="section" id="favorites">
-    <h2>Favorite cats</h2>
-    <article>
-      <img id="img3" src="" alt="random cat">
-      <button class="btn">Remove from favorites</button>
-    </article>  
-  </section>
+    <section id="favorite-cats">
+    </section>
 
-  <script src="app.js"></script>
-</body>
+    <script src="./main.js"></script>
+  </body>
 </html>
