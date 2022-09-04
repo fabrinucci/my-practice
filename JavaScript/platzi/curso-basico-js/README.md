@@ -87,6 +87,56 @@ Los bucles pueden ejecutar un bloque de código varias veces. JavaScript admite 
 * while - recorre un bloque de código mientras se cumple una condición específica.
 * do/while - también recorre un bloque de código mientras se cumple una condición específica.
 
+#### for of / for in
+
+El bucle **for of** recorre iterables, como arrays, Map o Set. El valor es cada elemento del iterable puede tener cualquier nombre, por eso se inicia con let nombre.
+
+```
+const array = [5, 4, 3, 2, 1]
+
+for (let numero of array) {
+  console.log(numero) // 5 4 3 2 1
+}
+```
+Sin embargo, debes tener en cuenta que solo podrás acceder a sus valores, y no a sus referencias, por lo que si quieres cambiar los elementos del array, necesitarás un índice array[indice].
+
+```
+for (let numero of array) {
+  valor *= 2 
+  console.log(numero) // 10 8 6 4 2
+}
+ 
+console.log(array) // [ 5, 4, 3, 2, 1 ]
+```
+
+Si intentas recorrer un objeto de esta forma for elemento of objeto, te ocurrirá un error, porque un objeto no es un iterable. En su lugar puedes utilizar for elemento in objeto, que recorrerá las propiedades del objeto.
+
+```
+const objeto = { a: 1, b: 2, c: 3 }
+
+for (let elemento in objeto) {
+  console.log(elemento) // 'a' 'b' 'c'
+}
+```
+
+Sin embargo, si utilizas for elemento in array, no dará un error, pero el resultado no será el esperado, ya que los arrays son un tipo de objeto donde cada propiedad es el índice del valor del array o del iterable. Por lo que debes tener cuidado.
+
+```
+const array = [5, 4, 3, 2, 1]
+
+for (let elemento in array) {
+  console.log(elemento) // '0' '1' '2' '3' '4'
+}
+
+/* const array = {
+	'0': 5,
+  '1': 4,
+  '2': 3,
+  '3': 2,
+  '4': 1
+}*/
+
+```
 
 ## Objetos
 
