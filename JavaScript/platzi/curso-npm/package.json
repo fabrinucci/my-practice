@@ -1,0 +1,17 @@
+{
+  "name": "curso-npm",
+  "version": "1.0.0",
+  "description": "Curso npm - gestion de paquetes y dependencias",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "Fabrizio Nucci",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.0"
+  }
+}

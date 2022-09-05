@@ -43,3 +43,35 @@ const lucas = new Student(
 lucas.aprobarCurso('JavaScript moderno');
 
 console.log(lucas);
+
+
+// Clases
+
+class Alumno {
+  constructor({
+    name,
+    age,
+    cursosAprobados = [], //* Por defecto el parámetro tiene un valor vacío
+    email,
+  }) {
+    this.name = name
+    this.age = age
+    this.cursosAprobados = cursosAprobados
+    this.email = email
+  }
+
+  aprobarCurso(nuevoCursito) {
+    this.cursosAprobados.push(nuevoCursito)
+  }
+};
+
+const patricia = new Alumno({
+  name: 'Patricia',
+  email: 'patricia@gmail.com',
+  age: 21,
+  cursosAprobados: ['POO'],
+});
+
+patricia.aprobarCurso('Manipulacion del DOM');
+
+console.log(patricia);

@@ -318,13 +318,21 @@ El DOM es una representación del documento HTML como un grupo de nodos y objeto
 
 Por lo menos esa es la forma en la cual lo entiendo por ahora. Lo comparto porque me parece importante y quizá alguien mas tenga la duda.
 
-Pueden encontrar una definición formal y mejor estructurada en:
-
-https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model/Introduction
 
 ![img](img/array-methods.png)
-
 
 https://thisthat.dev/number-constructor-vs-parse-int/
 
 
+
+¿Es posible crear variables a partir de otras variables?
+* Verdadero
+
+¿Cuál es la diferencia principal entre arrays y objetos?
+* En los arrays cada elemento se puede diferenciar por su índice o posición. En los objetos cada elemento tiene su propio nombre clave.
+
+¿Cómo podemos convertir un objeto en un array?
+* Object.values(nombreObjeto) u Object.keys(nombreObjeto)
+
+Ya tienes en JavaScript una variable input1 que selecciona un input de tu HTML. ¿Cómo puedes leer el valor que escriban los usuarios en ese input?
+* input1.getAttribute('value') & input1.value

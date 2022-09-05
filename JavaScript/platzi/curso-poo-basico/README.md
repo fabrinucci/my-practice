@@ -95,3 +95,66 @@ const Juanita = new Student();
 
 * El atributo __proto\_\_ también se hereda a los objetos, ya que éstos son a la vez instancias de algún prototipo creado por el desarrollador y del prototipo Object.
 
+
+## Clases
+
+Basicamente las clases hacen lo mismo que los prototipos pero con una sintaxis diferente, mas amigable para el programador.
+
+El patrón “RORO” (“Receive an object, return an object”) nos ayuda cuando tenemos muchos parámetros en nuestro constructor, ya que al instanciar la clase debemos acordarnos del orden de los parámetros y, además, no podemos tener parámetros por defecto.
+
+No obstante, si recibimos un objeto, sí podemos poner parámetros por defecto y no recibir un parámetros si fuere el caso, sin que pase nada.
+
+A la hora de enviar los argumentos al instanciar la clase, también debe enviarse un objeto, y otra ventaja es que esos argumentos no hace falta que estén en el mismo orden que están los parámetros del constructor. ¡Prácticamente son todo ventajas! 😃
+
+![img](img/clases.gif)
+
+![img](https://static.platzi.com/media/user_upload/js_poo-48b3b235-85d8-45cc-badc-4056e2882ba7.jpg)
+
+
+## Abstracción
+
+La **abstracción** tiene como objetivo aislar las propiedades y funciones esenciales en una clase que sirve de molde para crear otros objetos (instancias) que comparten las mismas propiedades y funciones y se pueden personalizar.
+Ventajas de uso:
+
+* Evitamos codigo duplicado, es decir, reutilizamos codigo.
+* Podemos crear múltiples instancias con una sola abstracción.
+* Al encapsular datos, los estamos protegiendo
+* Evitamos código a bajo nivel.
+* Podemos cambiar implementaciones en la clase, sin perjudicar su funcionamiento.
+
+
+## ¿Qué es encapsulamiento?
+
+Es guardar, proteger o limitar el acceso de cierto atributos y/o propiedades en nuestros prototipos y objetos.
+
+### Cuando hablamos de **encapsulamiento** hablamos de:
+
+* Esconder métodos y atributos 👻
+* No permitir la alteración de métodos y atributos ❌
+
+### Formas de aplicar encapsulamiento en JavaScript
+
+* Getters y setters 🖐
+* Namespaces 🙂
+* Object.defineProperties 🎈
+* Módulo de ES6 🤝
+
+## Herencia
+
+La herencia nos permite crear nuevas clases a partir de otras, se basa en modelos y se genera una jerarquía de padre e hijo.
+
+JavaScript en un lenguaje orientado a objetos basado en prototipos, en lugar de estar basado en clases. Debido a esta básica diferencia, es menos evidente entender cómo JavaScript nos permite crear herencia entre objetos, y heredar las propiedades y sus valores.
+
+## Polimorfismo
+
+Es como la herencia reloaded. Es como ‘La Herencia 2.0’. Permite a nuestras subclases cambiar o anular los comportamientos de los métodos y atributos del prototipo madre, de la clase madre. Aunque herede las propiedades, el polimorfismo permite cambiar su comportamiento.
+
+### Tipos:
+
+* Polimorfismo de Sobrecarga: ocurre cuando existen métodos con el mismo nombre y funcionalidad similar en clases totalmente independientes entre ellas.
+* Polimorfismo Paramétrico: El polimorfismo paramétrico es la capacidad para definir varias funciones utilizando el mismo nombre, pero usando parámetros diferentes (nombre y/o tipo).
+* Polimorfismo de Inclusión (JS): La habilidad para redefinir por completo el método de una superclase en una subclase.
+
+
+
+![img](https://static.platzi.com/media/user_upload/IMG_0044-9cd2d8ad-6c0f-4af4-8320-b4d79165f0af.jpg)
