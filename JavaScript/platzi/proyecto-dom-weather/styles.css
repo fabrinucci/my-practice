@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: rgb(28, 51, 179);
+  color: white;
+}
+
+
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search {
+  margin: 20px;
+  display: flex;
+}
+
+.search input {
+  padding: 15px 40px;
+  border-radius: 8px 0px 0 8px;
+  border: none;
+}
+
+.btn {
+  padding: 15px;
+  border: none;
+  border-left: 4px solid rgb(39, 115, 190);
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  background-color: rgb(24, 126, 216);
+  color: white;
+  transition: all .3s ease;
+}
+
+.btn:hover {
+  background-color: rgb(25, 152, 231);
+}
+
+.city-card {
+  background-color: rgb(24, 126, 216);
+  border-radius: 10px;
+  height: 450px;
+  width: 500px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.city-name {
+  font-size: 80px;
+}
+
+.city-temperature {
+  font-size: 50px;
+}
+
+.info-temperature {
+  display: flex;
+  font-size: 28px;
+}
+
+.info-temperature :nth-child(1) {
+  margin-right: 30px;
+}
+
+.city-description {
+  font-size: 35px;
+}

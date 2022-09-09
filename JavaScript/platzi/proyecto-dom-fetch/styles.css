@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(112, 31, 187, 0.845);
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 30px;
+}
+
+.card {
+  background-color: rgba(157, 25, 148, 0.69);
+  border-radius: 10px;
+  text-align: center;
+  padding: 50px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+
+.card-title {
+  font-size: 18px;
+}
+
+.card-price {
+  font-size: 15px;
+}
+
+.card img {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+}

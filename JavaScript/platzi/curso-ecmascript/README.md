@@ -99,6 +99,8 @@ let data = { ...person, country };
 console.log(data);
 ```
 
+![img](img/spread.webp)
+
 ### rest
 ```
 function sum(num, ...values) {
