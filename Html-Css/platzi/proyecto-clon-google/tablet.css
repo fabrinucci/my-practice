@@ -1,0 +1,80 @@
+
+nav ul li {
+  margin-right: 1.5rem;
+}
+
+nav a {
+  font-size: 1rem;
+}
+
+nav .google-aps {
+  height: 3.5rem;
+  width: 3.5rem;
+  padding: .6rem;
+}
+
+nav .account-li {
+  padding: .5rem;
+}
+
+nav .account-img {
+  height: 2.8rem;
+  width: 2.8rem;
+}
+
+
+figure img {
+  width: 21rem;
+  height: 7.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-search input {
+  height: 3rem;
+  width: 40rem;
+  font-size: 1rem;
+  padding: .5rem 3rem;
+}
+
+.input-search .icon-search {
+  width: 1.5rem;
+  height: 2.5rem;
+  top: 3px;
+  left: 8px;
+}
+
+.input-search .icon-micro {
+  width: 1.5rem;
+  height: 2.5rem;
+  top: 3px;
+  right: 8px;
+}
+
+.btn {
+  height: 2.5rem;
+  width: 10rem;
+  font-size: 1rem;
+}
+
+.language-container p,
+.language-container a  {
+  font-size: 1rem;
+}
+
+
+.footer-country {
+  padding: 1rem;
+}
+
+.footer-country h3 {
+  font-size: 1rem;
+}
+
+.footer-container a {
+  font-size: .9rem;
+}
+
+.footer-left ul li,
+.footer-right ul li {
+  margin-right: 1.5rem;
+}

@@ -5,9 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Google</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="tablet.css">
-  <link rel="stylesheet" href="desktop.css">
+  <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 600px)">
+  <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 850px)">
 </head>
 <body>
   
@@ -16,18 +17,58 @@
       <ul>
         <li><a href="">Gmail</a></li>
         <li><a href="">Images</a></li>
-        <li><a href="">Images</a></li>
-        <li><a href="">Images</a></li>
+        <li>
+          <img class="google-aps" src="img/apps_white.svg" alt="Google Apps" title="Google Apps">
+        </li>
+        <li class="account-li">
+          <img class="account-img" src="img/girl-avatar.jpg" alt="profile account">
+        </li>
       </ul>
     </nav>
   </header>
 
   <main>
-
+    <section class="container">
+      <figure>
+        <img src="img/googlelogo_light.png" alt="Google logo">
+      </figure>
+      <div class="input-search">
+        <img src="img/search_white.svg" class="icon-search" />
+        <input type="text"/>
+        <img src="img/keyboard_voice_white.svg" class="icon-micro" title="Search by voice"/>
+      </div>
+      <div class="buttons">
+        <button class="btn btn-search">Search</button>
+        <button class="btn btn-extra">I'm feeling lucky</button>
+      </div>
+      <div class="language-container">
+        <p>Google offered in:</p>
+        <a href="">English</a>
+      </div>
+    </section>
   </main>
 
   <footer>
-
+    <div class="footer-country">
+      <h3>Argentina</h3>
+    </div>
+    <div class="footer-container">
+      <div class="footer-left">
+        <ul>
+          <li><a href="">About</a></li>
+          <li><a href="">Advertising</a></li>
+          <li><a href="">Business</a></li>
+          <li><a href="">How Search Works</a></li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <ul>
+          <li><a href="">Privacy</a></li>
+          <li><a href="">Terms</a></li>
+          <li><a href="">Settings</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
 
 </body>
