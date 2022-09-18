@@ -1,0 +1,6 @@
+@import './header.scss';
+@import './demo.less';
+
+body {
+  background-color: rgba(226, 27, 67, 0.872);
+}
