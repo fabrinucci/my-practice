@@ -30,7 +30,6 @@ Microsoft no se podia quedar atras y lanzo JScript y por eso tenermos ECMAScript
 
 # Evolucion de ECMAScript:
 
-![img](img/es-history.webp)
 
 ## Que es el TC39
 
@@ -88,7 +87,6 @@ console.log(rest);
 // expected output: Array [30,40,50]
 ```
 
-![img](img/destructuring.webp)
 
 ### spread operator
 ```
@@ -99,7 +97,6 @@ let data = { ...person, country };
 console.log(data);
 ```
 
-![img](img/spread.webp)
 
 ### rest
 ```
@@ -126,7 +123,6 @@ function newUser(user, age, country){ return { user, age, country, } }
 
 ### Promesas
 
-![img](https://www.alexlintu.com/content/images/2021/04/Group-74.png)
 
 ### Clases
 
@@ -166,7 +162,6 @@ Recuerda poner las extensiones como buena practica
 
 ### Generadores
 
-![img](img/es6-generators.webp)
 
 
 #### Extra for of for in
@@ -275,9 +270,7 @@ Object.hasOwn(letras, "toString") // false
 
 ### object entries y object values
 
-![img](img/javascript-object.webp)
 
-![img](img/object-entries.webp)
 
 ### string padding y trailing commas
 
@@ -313,7 +306,6 @@ original["datos"] === copia["datos"] // false
 ```
 ### Promise.finally
 
-![img](img/finally.webp)
 
 ## ES10
 
@@ -393,7 +385,6 @@ Esto no sugiere que haya algo mal con usar la notación de corchetes. Por ejempl
 
 ### top level away 
 
-![img](img/ecma.png)
 
 
 1. ¿Cuál es el comando para inicializar nuestro proyecto con Node.js?

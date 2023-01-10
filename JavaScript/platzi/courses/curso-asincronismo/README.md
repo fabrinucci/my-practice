@@ -9,7 +9,6 @@
 - Luego de 5 minutos por cada tarea, entregas las tortas a los clientes correspondientes. Después de 10 minutos necesitas la torta, entonces preguntas ¿ya está lista la torta? Tu ayudante te entrega la torta y se lo entregas. En total fueron 20 minutos y todos los clientes recibieron su pedido. Así funciona la asincronía en JavaScript.
 
 - Asincronía en JavaScript
-El proceso completo que sigue JavaScript se muestra en la siguiente imagen: ![image](img/engine.png)
 
 - Las Web APIs son herramientas adicionales que te ofrece el navegador para realizar peticiones, modificar el DOM, entre otras. Estas herramientas las puedes observar en el objeto global window.
 
@@ -33,8 +32,6 @@ baz();
 - Después de medio segundo, "Second".
 
 Esto es porque la función bar salió del Call Stack para esperar asíncronamente un tiempo definido (0 segundos en este caso). Después tendrá que esperar (sin importar el tiempo establecido en setTimeout) hasta que se vacíe el Call Stack para que el Event loop le permita entrar nuevamente al Call Stack para ejecutarse.
-
-![image](img/async-gif.gif)
 
 https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif
 

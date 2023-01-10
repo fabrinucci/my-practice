@@ -106,8 +106,6 @@ No obstante, si recibimos un objeto, sí podemos poner parámetros por defecto y
 
 A la hora de enviar los argumentos al instanciar la clase, también debe enviarse un objeto, y otra ventaja es que esos argumentos no hace falta que estén en el mismo orden que están los parámetros del constructor. ¡Prácticamente son todo ventajas! 😃
 
-![img](img/clases.gif)
-
 ![img](https://static.platzi.com/media/user_upload/js_poo-48b3b235-85d8-45cc-badc-4056e2882ba7.jpg)
 
 
@@ -154,7 +152,5 @@ Es como la herencia reloaded. Es como ‘La Herencia 2.0’. Permite a nuestras 
 * Polimorfismo de Sobrecarga: ocurre cuando existen métodos con el mismo nombre y funcionalidad similar en clases totalmente independientes entre ellas.
 * Polimorfismo Paramétrico: El polimorfismo paramétrico es la capacidad para definir varias funciones utilizando el mismo nombre, pero usando parámetros diferentes (nombre y/o tipo).
 * Polimorfismo de Inclusión (JS): La habilidad para redefinir por completo el método de una superclase en una subclase.
-
-
 
 ![img](https://static.platzi.com/media/user_upload/IMG_0044-9cd2d8ad-6c0f-4af4-8320-b4d79165f0af.jpg)

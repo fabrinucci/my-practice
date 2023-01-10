@@ -2,11 +2,7 @@
 
 * Consola en el navegador: https://jsconsole.com/
 
-![img](img/js.png)
-
 ## Variables
-
-![img](img/variables.webp)
 
 ## Diferencia entre funciones declarativas y funciones de expresion
 
@@ -36,8 +32,6 @@ En JavaScript, las declaraciones se mueven al principio de su scope o ámbito. E
 Coerción es la forma en la que podemos cambiar un tipo de valor a otro, existen dos tipos de coerción:
 * Coerción implícita = es cuando el lenguaje nos ayuda a cambiar el tipo de valor.
 * Coerción explicita = es cuando obligamos a que cambie el tipo de valor.
-
-![img](./img/coercion.png)
 
 ---
 
@@ -71,9 +65,6 @@ Coerción es la forma en la que podemos cambiar un tipo de valor a otro, existen
 * Sus elementos principales son el indice y el elemento.
 * Un array no es inmutable.
 
-![img](img/arrays.png)
-
-![img](img/array-elem.webp)
 
 https://github.com/degranda/jsBasico-
 

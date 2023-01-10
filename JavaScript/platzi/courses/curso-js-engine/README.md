@@ -7,7 +7,6 @@ De hecho, los usuarios del navegador NetScape solicitaban mejoraras y actualizac
 
 JavaScript fue creado por **Brendan Eich**, inspirado por otros lenguajes como Java, Scheme y Self. El propósito de JavaScript fue dar solución a la problemática de las páginas estáticas.
 
-![img](img/js-history.webp)
 
 ### Origen de JavaScript
 
@@ -60,7 +59,6 @@ Cada navegador tiene su propio motor, sin embargo, el que más impacto ha tenido
 Qué es y cómo funciona JIT compiler
 El proceso en el que el motor V8 transforma código JavaScript en Machine Code se denomina Just in Time Compiler o JIT compiler.
 
-![img](img/engine-js01.PNG)
 
 ---
 
@@ -95,9 +93,7 @@ Intérprete: El intérprete recorre el AST y genera Bytecode (lenguaje que entie
 
 Profiler y compiler: El profiler monitorea y mira el código para optimizarlo. El compiler optimiza ese código y genera machine code (lenguaje binario). En esta etapa, por la intención de optimizar el código, también genera errores como el Hoisting.
 
-![img](img/js-engine2.jpg)
 
-![img](img/js-engine-complete.webp)
 
 
 Si abres la consola del navegador, con la combinación de teclas Ctrl + Shift + I o clic derecho e “Inspeccionar” en tu navegador preferido (de preferencia Google Chrome).
@@ -141,7 +137,6 @@ El memory heap consiste en una manera desorganizada o aleatoria de guardar la in
 Por ejemplo, declaras una variable nombre y le asignas un valor, esta se guardará en la memoria RAM utilizando una referencia que manejará el memory heap. De esta manera, el Engine sabrá que variable mostrar cuando sea utilizada después de la declaración, pidiendo la referencia de memoria al memory heap y buscándola en la memoria RAM.
 
 
-![img](img/engine-js02.PNG)
 
 ### Valores por referencia
 
@@ -158,7 +153,6 @@ console.log(objeto1 === objeto2)
 
 Primero mostrará el valor 2 y después true. La explicación es que la referencia de ambos objetos a sus valores es la misma, por lo que si modificas un valor, también lo harás en ambos.
 
-![img](img/engine-js03.PNG)
 
 
 ## Call Stack
@@ -167,7 +161,6 @@ El *Call Stack* consiste en ordenar las funciones que son invocadas de arriba ha
 
 Primeramente, guarda todas las funciones o declaraciones en anonymous que representa el objeto global.
 
-![img](img/engine-js04.PNG)
 
 Y así sucesivamente. Va agregando y quitando ejecuciones en el orden correspondiente. Es por eso que JavaScript realiza una tarea a la vez.
 
@@ -175,23 +168,18 @@ Y así sucesivamente. Va agregando y quitando ejecuciones en el orden correspond
 
 El siguiente código contiene tres funciones **hello**, **world** y **main** que ya han sido guardadas en el memory heap al declararlas y están listas para ejecutarse.
 
-![img](img/engine-js05.PNG)
 
 Al llegar a la función **main**, el Engine lo coloca en el *Call Stack* para ejecutarlo. Pero dentro se encuentran más invocaciones a otras funciones, por ende, primero ejecutará la que esté más arriba hasta ejecutarlas todas.
 
-![img](img/engine-js06.PNG)
 
 Al invocar la función **hello**, el Engine lo coloca en el *Call Stack*. La función **console.log** también es una función, por lo que el Engine también lo colocará en el *Call Stack*.
 
-![img](img/engine-js07.PNG)
 
 Una vez ejecutada la función **console.log** el Engine lo sacará del *Call Stack*.
 
-![img](img/engine-js08.PNG)
 
 Como la función **hello** ya ha sido ejecutada, el Engine lo sacará del *Call Stack* para seguir ejecutando la función **main**.
 
-![img](img/engine-js09.PNG)
 
 Y así sucesivamente, hasta que termine de ejecutarse **main**, o todas las tareas en el *Call Stack*. Cuando no existan tareas en el *Call Stack*, el programa habrá finalizado.
 
@@ -235,11 +223,9 @@ Por lo tanto, el que elimina ese valor, es el Garbage Collection.
 
 Stack overflow es un término empleado para referirse al desbordamiento de tareas en el Call Stack del motor de JavaScript. Esto ocurre por ciclos infinitos, funciones recursivas sin control, cambios de estado continuo, o algún programa que exceda las tareas que puede ejecutar el navegador.
 
-![img](img/engine-js10.PNG)
 
 Anteriormente, los navegadores no estaban preparados para manejar un stack overflow, por lo que la página web colapsaba y cerraba la aplicación. En la actualidad, si el navegador encuentra este problema, detiene la ejecución del código evitando que colapse la página web.
 
-![img](img/engine-js11.PNG)
 
 ## JavaScript Runtime
 
@@ -261,7 +247,6 @@ En Internet sucede lo mismo, si un usuario no observa información en tu página
 
 Entonces, una solución sería ejecutar las tareas más lentas (torta) después de las más rápidas (tacos). Y esta solución se llama asincronismo y JavaScript tiene una manera de manejarlo.
 
-![img](img/runtime.png)
 
 ## Qué es la asincronía en JavaScript
 
@@ -276,7 +261,6 @@ Luego de 5 minutos por cada tarea, entregas las tortas a los clientes correspond
 Asincronía en JavaScript
 El proceso completo que sigue JavaScript se muestra en la siguiente imagen:
 
-![img](img/engine-js12.PNG)
 
 Las Web APIs son herramientas adicionales que te ofrece el navegador para realizar peticiones, modificar el DOM, entre otras. Estas herramientas las puedes observar en el objeto global window.
 
@@ -306,7 +290,6 @@ Esto es porque la función bar salió del Call Stack para esperar asíncronament
 
 Después tendrá que esperar (sin importar el tiempo establecido en setTimeout) hasta que se vacíe el Call Stack para que el Event loop le permita entrar nuevamente al Call Stack para ejecutarse.
 
-![img](img/asincronismo.gif)
 
 
 

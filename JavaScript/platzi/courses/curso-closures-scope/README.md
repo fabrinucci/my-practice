@@ -2,7 +2,6 @@
 
 ## Global Scope, Function Scope y Block Scope
 
-![img](img/scopes.webp)
 
 La redeclaración es volver a declarar una variable, y la reasignación es volver a asignar un valor.
 
@@ -269,23 +268,19 @@ hello();
 
 * Al momento de ejecutar el código te aparecerá el panel de debugging.
 
-![img](img/scope_closure02.png)
 
 En el panel de información, existe un apartado “Scope” que muestra el *scope/ de cada variable correspondiente al punto donde la ejecución se detuvo.
 
-![img](img/scope_closure03.png)
 
 ### Breakpoints
 
 Los breakpoints son puntos donde la ejecución del programa se parará. Para activarlos se debe dar clic en la línea de código que se desea parar.
 
-![img](img/scope_closure04.png)
 
 ### Closures en debugging
 
 Si el código tiene closures, aparecerán en el panel “Scope”.
 
-![img](img/scope_closure05.png)
 
 Para concluir, deberías aprender a utilizar las herramientas de desarrollo web para ser más eficiente, y de esta forma encontrar de manera eficiente la causa de un error o un comportamiento no deseado que provocaría un bug.
 

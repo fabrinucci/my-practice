@@ -1,7 +1,5 @@
 # Curso Fundamentos de software
 
-![img](img/funsoft.webp)
-
 * AJAX: Asynchronous Javascript And XML
 * JSON: Javascript Object Notation
 * REST: Representational State Transfer
@@ -16,5 +14,3 @@
 * UDP: User Datagram Protocol
 * SoC: System on a Chip
 * ASCII: American Standard Code for Information Interchange
-
-![img](img/software.webp)

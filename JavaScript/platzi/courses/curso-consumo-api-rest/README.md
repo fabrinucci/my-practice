@@ -14,16 +14,13 @@
 
 - Aunque pocas, algunas aplicaciones todavía usan el método SOAP para mandar información entre computadoras. Sin embargo, actualmente REST está dominando su aplicación.
 
-![img](img/api-rest.png)
 
 ## Flujo de comunicación entre usuarios, frontend y backend
 
 ### ¿Cómo las hacemos dinámicas y interactivas? 
 - Pues las APIs del DOM que nos permiten escuchar las interacciones del usuario y la API Fetch son herramientas poderosísimas que combinadas nos dan una alternativa al tener que recargar toda la página HTML cada vez que queremos algún recurso SSR(server side rendering).
 
-![img](img/Response-del-servidor.gif)
 
-![img](img/what-is-API.webp)
 
 ---
 
@@ -35,15 +32,12 @@ https://github.com/public-apis/public-apis
 
 ## Endopoints y Query parameters
 
-![img](img/endpoints.png)
 
-![img](img/qp.png)
 
 ---
 
 ## Http Status code
 
-![img](img/http-status.png)
 
 ### Most common HTTP status codes:
 ```
@@ -63,15 +57,12 @@ const HTTP = {
 ---
 
 ## Api Key
-![img](img/api-key.png)
 
-![img](img/authorization.png)
 
 ---
 
 ## Http Methods
 
-![img](img/http-meth.png)
 
 
 ### clase 10/ 11 :
@@ -87,7 +78,6 @@ Los headers son esquemas de key: value que contienen información sobre el HTTP 
 
 Los API Headers contienen una gran cantidad de información para rastrear posibles problemas al usar cualquier API. La mayor parte del tiempo, no los mirarás. Pero cuando surgen problemas, los headers son el primer lugar en el que debes buscar.
 
-![img](img/headers-body.webp)
 
 Tipos de Headers:
 
