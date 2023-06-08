@@ -1,0 +1,20 @@
+{
+  "name": "my-practice",
+  "version": "1.0.0",
+  "description": "This repository is for my practice on my path in Software Development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabrinucci/my-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabrinucci/my-practice/issues"
+  },
+  "homepage": "https://github.com/fabrinucci/my-practice#readme"
+}
