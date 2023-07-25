@@ -6,24 +6,49 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const uuid_1 = require("uuid");
 const Workout_1 = __importDefault(require("../database/Workout"));
 const getAllWorkouts = () => {
-    const allWorkouts = Workout_1.default.getAllWorkouts();
-    return allWorkouts;
+    try {
+        const allWorkouts = Workout_1.default.getAllWorkouts();
+        return allWorkouts;
+    }
+    catch (error) {
+        throw error;
+    }
 };
 const getOneWorkout = (workoutId) => {
-    const workout = Workout_1.default.getOneWorkout(workoutId);
-    return workout;
+    try {
+        const workout = Workout_1.default.getOneWorkout(workoutId);
+        return workout;
+    }
+    catch (error) {
+        throw error;
+    }
 };
 const createNewWorkout = (newWorkout) => {
     const workoutToInsert = Object.assign(Object.assign({}, newWorkout), { id: (0, uuid_1.v4)(), createdAt: new Date().toLocaleString('en-US', { timeZone: 'UTC' }), updatedAt: new Date().toLocaleString('en-US', { timeZone: 'UTC' }) });
-    const createdWorkout = Workout_1.default.createNewWorkout(workoutToInsert);
-    return createdWorkout;
+    try {
+        const createdWorkout = Workout_1.default.createNewWorkout(workoutToInsert);
+        return createdWorkout;
+    }
+    catch (error) {
+        throw error;
+    }
 };
 const updateOneWorkout = (workoutId, changes) => {
-    const updatedWorkout = Workout_1.default.updateOneWorkout(workoutId, changes);
-    return updatedWorkout;
+    try {
+        const updatedWorkout = Workout_1.default.updateOneWorkout(workoutId, changes);
+        return updatedWorkout;
+    }
+    catch (error) {
+        throw error;
+    }
 };
 const deleteOneWorkout = (workoutId) => {
-    Workout_1.default.deleteOneWorkout(workoutId);
+    try {
+        Workout_1.default.deleteOneWorkout(workoutId);
+    }
+    catch (error) {
+        throw error;
+    }
 };
 exports.default = {
     getAllWorkouts,
