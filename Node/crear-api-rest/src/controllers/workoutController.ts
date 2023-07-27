@@ -1,10 +1,25 @@
 import { type Request, type Response } from 'express';
 import workoutService from '../services/workoutService';
-import { WorkoutRequest, WorkoutResponse } from '../../types';
+import {
+  type RequestBody,
+  type RequestParams,
+  type RequestQuery,
+  type ResponseBody,
+  type WorkoutRequest,
+} from '../../types';
 
-const getAllWorkouts = (req: Request, res: Response) => {
+const getAllWorkouts = (
+  req: Request<RequestParams, ResponseBody, RequestBody, RequestQuery>,
+  res: Response
+) => {
+  const { mode, equipment, length, page } = req.query;
   try {
-    const allWorkouts = workoutService.getAllWorkouts();
+    const allWorkouts = workoutService.getAllWorkouts({
+      mode,
+      equipment,
+      length,
+      page,
+    });
     res.status(200).send({ status: 'OK', data: allWorkouts });
   } catch (error: any) {
     res.status(error?.status || 500).send({

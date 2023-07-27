@@ -1,10 +1,29 @@
-import { WorkoutRequest, type WorkoutResponse } from '../../types';
+import {
+  FilterParams,
+  WorkoutRequest,
+  type WorkoutResponse,
+} from '../../types';
 import DB from './db.json';
 import { saveToDatabase } from './utils';
 
-const getAllWorkouts = () => {
+const getAllWorkouts = (filterParams: FilterParams) => {
   try {
-    return DB.workouts;
+    let workouts = DB.workouts;
+    if (filterParams.mode) {
+      const filterWord = filterParams.mode.toLowerCase();
+      return DB.workouts.filter((workout) =>
+        workout.mode.toLowerCase().includes(filterWord)
+      );
+    }
+
+    if (filterParams.equipment) {
+      const filterWord = filterParams.equipment.toLowerCase();
+      return DB.workouts.filter((workout) => {
+        const equipment = workout.equipment.map((eq) => eq.toLowerCase());
+        return equipment.includes(filterWord);
+      });
+    }
+    return workouts;
   } catch (error: any) {
     throw {
       status: 500,

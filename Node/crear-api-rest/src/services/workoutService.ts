@@ -1,10 +1,10 @@
 import { v4 as uuidv4 } from 'uuid';
-import { type WorkoutRequest } from '../../types';
+import { FilterParams, type WorkoutRequest } from '../../types';
 import Workout from '../database/Workout';
 
-const getAllWorkouts = () => {
+const getAllWorkouts = (filterParams: FilterParams) => {
   try {
-    const allWorkouts = Workout.getAllWorkouts();
+    const allWorkouts = Workout.getAllWorkouts(filterParams);
     return allWorkouts;
   } catch (error) {
     throw error;
