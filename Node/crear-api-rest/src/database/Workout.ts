@@ -9,20 +9,22 @@ import { saveToDatabase } from './utils';
 const getAllWorkouts = (filterParams: FilterParams) => {
   try {
     let workouts = DB.workouts;
+
     if (filterParams.mode) {
-      const filterWord = filterParams.mode.toLowerCase();
+      const filterMode = filterParams.mode.toLowerCase();
       return DB.workouts.filter((workout) =>
-        workout.mode.toLowerCase().includes(filterWord)
+        workout.mode.toLowerCase().includes(filterMode)
       );
     }
 
     if (filterParams.equipment) {
-      const filterWord = filterParams.equipment.toLowerCase();
+      const filterEquipment = filterParams.equipment.toLowerCase();
       return DB.workouts.filter((workout) => {
         const equipment = workout.equipment.map((eq) => eq.toLowerCase());
-        return equipment.includes(filterWord);
+        return equipment.includes(filterEquipment);
       });
     }
+
     return workouts;
   } catch (error: any) {
     throw {

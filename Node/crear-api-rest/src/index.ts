@@ -7,7 +7,11 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 app.get('/', (req: Request, res: Response) => {
-  res.send('<h1>Hello world to my people</h1>');
+  res.send(
+    `<h1>
+      <a href='http://localhost:${4000}/api/v1/workouts'>Go to workouts</a>
+    </h1>`
+  );
 });
 
 app.use(express.json());

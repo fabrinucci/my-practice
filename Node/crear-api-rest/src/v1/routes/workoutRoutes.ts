@@ -1,10 +1,12 @@
 import { Router } from 'express';
+import apicache from 'apicache';
 import workoutController from '../../controllers/workoutController';
 import recordController from '../../controllers/recordController';
 
 const router = Router();
+const cache = apicache.middleware;
 
-router.route('/').get(workoutController.getAllWorkouts);
+router.get('/', cache('2 minutes'), workoutController.getAllWorkouts);
 
 router.route('/:workoutId').get(workoutController.getOneWorkout);
 
