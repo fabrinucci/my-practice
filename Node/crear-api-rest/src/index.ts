@@ -2,6 +2,7 @@ import express, { type Request, type Response } from 'express';
 import v1WorkoutRouter from './v1/routes/workoutRoutes';
 import dotenv from 'dotenv';
 dotenv.config();
+import { swaggerDocs as V1SwaggerDocs } from './v1/swagger';
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -19,4 +20,5 @@ app.use('/api/v1/workouts', v1WorkoutRouter);
 
 app.listen(PORT, () => {
   console.log(`App listen at http://localhost:${PORT}`);
+  V1SwaggerDocs(app, PORT);
 });

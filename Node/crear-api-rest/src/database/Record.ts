@@ -1,6 +1,4 @@
-import { WorkoutRequest, type WorkoutResponse } from '../../types';
 import DB from './db.json';
-import { saveToDatabase } from './utils';
 
 const getRecordForWorkout = (workoutId: string) => {
   try {

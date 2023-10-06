@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import { FilterParams, type WorkoutRequest } from '../../types';
+import { type FilterParams, type WorkoutRequest } from '../../types';
 import Workout from '../database/Workout';
 
 const getAllWorkouts = (filterParams: FilterParams) => {
