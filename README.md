@@ -1,11 +1,11 @@
 # My Practice
 
-## Introduction
-
-This repository is for my practice on my path in Software Development.
+### Backend
 
 - [Node](./backend/node)
 
-- [HTML-CSS](./frontend/html-css)
+### Frontend
+
+- [HTML y CSS](./frontend/html-css)
 - [JavaScript](./frontend/javascript)
 - [React](./frontend/react)

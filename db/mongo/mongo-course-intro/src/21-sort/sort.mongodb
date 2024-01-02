@@ -1,0 +1,9 @@
+use("sample_training")
+
+db.zips
+  .find(
+    { city: "MIAMI" },
+    { _id: 0, city: 1, state: 1, pop: 1, zip: 1 })
+  .sort({ pop: -1 })
+  .limit(5)
+  .skip(3)

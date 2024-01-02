@@ -1,0 +1,10 @@
+use("platzi_store")
+
+// simple regex
+db.inventory.find({"item.description": {$regex: /description/}})
+
+db.inventory.find({"item.description": {$regex: /LINE/i}})
+
+db.inventory.find({"item.description": {$regex: /line$/}})
+
+db.inventory.find({"item.description": {$regex: /^single/i}})

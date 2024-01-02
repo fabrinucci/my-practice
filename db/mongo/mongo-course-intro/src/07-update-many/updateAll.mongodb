@@ -1,0 +1,31 @@
+use('sample_training')
+
+// SET
+// db.zips.updateMany(
+//   { city: 'CHELSEA'},
+//   {
+//     $set: {
+//       newAttribute: 'jee'
+//     }
+//   }
+// )
+
+// RENAME
+// db.zips.updateMany(
+//   { city: 'CHELSEA'},
+//   {
+//     $rename: {
+//       newAttribute: 'new_attribute'
+//     }
+//   }
+// )
+
+// DELETE
+db.zips.updateMany(
+  { city: 'CHELSEA'},
+  {
+    $unset: {
+      new_attribute: ''
+    }
+  }
+)

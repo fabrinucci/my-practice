@@ -1,0 +1,3 @@
+use("demo")
+
+db.iot.find()

@@ -1,0 +1,22 @@
+use("platzi_store")
+
+db.createCollection('users', {
+  validator: {
+    $jsonSchema: {
+      bsonType: 'object',
+      required: ['name', 'password', 'email'],
+      properties: {
+        name: {
+          bsonType: 'string'
+        },
+        password: {
+          bsonType: 'string',
+          pattern: '^[A-Za-z0-9]{8,}$'
+        },
+        email: {
+          bsonType: 'string'
+        },
+      }
+    }
+  }
+})

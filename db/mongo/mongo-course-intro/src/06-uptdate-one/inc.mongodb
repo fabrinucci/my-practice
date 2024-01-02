@@ -1,0 +1,14 @@
+use('demo')
+
+db.products.updateOne(
+  // query
+  { _id: 2 },
+  // change
+  {
+    $inc: {
+      price: 200,
+    }
+  }
+)
+
+db.products.find()

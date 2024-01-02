@@ -1,0 +1,16 @@
+use("demo")
+
+// db.inventory.updateMany({}, {
+//   $pull: {
+//     tags: 'book'
+//   }
+// })
+
+
+db.inventory.updateMany({}, {
+  $pull: {
+    tags: {
+      $in: ['book', 'appliance']
+    }
+  }
+})

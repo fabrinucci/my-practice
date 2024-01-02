@@ -1,0 +1,11 @@
+use("sample_training")
+
+db.trips.find(
+  { tripduration: {$lte: 150}},
+  { 
+    _id: 0,
+    tripduration: 1,
+    "start station name": 1, 
+    "end station name": 1,
+  }
+)

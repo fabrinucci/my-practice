@@ -1,0 +1,11 @@
+use("demo")
+
+db.products.insertOne({
+  name: 'Hoodie white',
+  price: 120
+})
+
+db.products.insertOne({
+  name: 'Hoodie black',
+  price: 180
+})

@@ -1,0 +1,40 @@
+use("platzi_store")
+
+// db.orders.insertOne({
+//   user_id: ObjectId('63f8e4b08c9630c1de4c2111'),
+//   date: '2022/12/12',
+//   items: [
+//     {
+//       name: 'Shoes',
+//       price: 120,
+//       qty: 1
+//     },
+//     {
+//       name: 'Hat',
+//       price: 50,
+//       qty: 1
+//     },
+//   ]
+// })
+
+db.orders.insertOne({
+  user_id: ObjectId('63f8e4b08c9630c1de4c2111'),
+  date: '2023/02/15',
+  items: [
+    {
+      name: 'Football nike ball',
+      price: 105,
+      qty: 1
+    },
+    {
+      name: 'Juventus home kit',
+      price: 189,
+      qty: 1
+    },
+    {
+      name: 'Bayern Munich flag',
+      price: 25,
+      qty: 1
+    },
+  ]
+})

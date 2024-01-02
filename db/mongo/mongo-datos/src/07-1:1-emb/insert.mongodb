@@ -1,0 +1,35 @@
+use("platzi_store")
+
+// db.users.insertOne({
+//   name: 'Lara',
+//   password: 'lara1123',
+//   email: 'lara1@gmail.com',
+//   role: 'Customer',
+//   address: {
+//     street: "San Gonzalez 7",
+//     city: 'Lima',
+//     zip: '98130'
+//   },
+//   shiping_address: {
+//     street: "Miguel Bosto",
+//     city: 'Arequipa',
+//     zip: '54684'
+//   },
+// })
+
+db.users.insertOne({
+  name: 'Pepe',
+  password: 'pepr456f4sf',
+  email: 'pepemaster@gmail.com',
+  role: 'Customer',
+  address: {
+    street: "Cg0351",
+    city: 'Cuzco',
+    zip: '6521'
+  },
+  shiping_address: {
+    street: "S Ir 26",
+    city: 'Cuzco',
+    zip: '8910'
+  },
+})

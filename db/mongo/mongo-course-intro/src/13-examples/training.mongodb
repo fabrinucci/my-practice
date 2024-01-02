@@ -1,0 +1,6 @@
+use("sample_training")
+
+db.trips.find({
+  usertype: { $ne:"Subscriber" },
+  tripduration: { $lte: 100 }
+})

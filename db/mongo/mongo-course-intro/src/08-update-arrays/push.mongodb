@@ -1,0 +1,7 @@
+use("demo")
+
+db.inventory.updateOne({_id: 4}, {
+  $push: {
+    tags: 'motomami'
+  }
+})

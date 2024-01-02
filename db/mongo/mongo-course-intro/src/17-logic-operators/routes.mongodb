@@ -1,0 +1,36 @@
+use("sample_training")
+
+db.routes.find()
+
+db.routes.find({
+  $nor: [
+    { airplane: "CR2" },
+    { src_airport: "ASF" },
+    { "airline.name": "Cargoitalia" }
+  ]
+})
+
+db.routes.find({
+  $nor: [
+    { src_airport: "CUZ" },
+    { dst_airport: "LIM" },
+  ]
+})
+
+db.routes.find({
+  $and: [
+    { "airline.name": "Aerolineas Argentinas"},
+    { 
+      $or: [
+        { src_airport: "COR" },
+        { dst_airport: "COR" }
+      ]
+    },
+    {
+      $nor: [
+        { src_airport: "BRC" },
+        { dst_airport: "BRC" }
+      ]
+    }
+  ]
+})

@@ -1,0 +1,12 @@
+use("platzi_store")
+
+// usando equal implicitamente
+db.inventory.find({qty: 20})
+
+// usando equal explicitamente
+db.inventory.find({qty: {$eq: 20}})
+
+db.inventory.find({"item.code": "123"})
+
+// usando no equal, este se usa de forma explícita
+db.inventory.find({qty: {$ne: 20}})

@@ -1,0 +1,55 @@
+use("platzi_store")
+
+db.users.find()
+db.orders.find()
+
+db.orders.find({
+  user_id: ObjectId('63f8e4b08c9630c1de4c2111')
+})
+
+db.orders.find({
+  user_id: ObjectId('63f8e4612e4fb16afdab67d1')
+})
+
+db.orders.aggregate([
+  {
+    $lookup: {
+      from: 'users',
+      localField: 'user_id',
+      foreignField: '_id',
+      as: 'user'
+    }
+  }
+])
+
+db.orders.aggregate([
+  {
+    $match: {
+      _id: ObjectId('63f8ea09a758406f4c9a6491')
+    }
+  },
+  {
+    $lookup: {
+      from: 'users',
+      localField: 'user_id',
+      foreignField: '_id',
+      as: 'user'
+    }
+  }
+])
+
+db.users.aggregate([
+  {
+    $match: {
+      _id: ObjectId('63f8e4b08c9630c1de4c2111')
+    }
+  },
+  {
+    $lookup: {
+      from: 'orders',
+      localField: '_id',
+      foreignField: 'user_id',
+      as: 'orders'
+    }
+  }
+])
