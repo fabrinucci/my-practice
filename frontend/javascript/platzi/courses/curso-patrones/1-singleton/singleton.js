@@ -25,12 +25,12 @@ const appSingleton = () => {
   const singleton2 = Singleton.getInstance('2.0');
   const singleton3 = Singleton.getInstance('3.0');
 
-  console.log(singleton1);
-  console.log(singleton2);
-  console.log(singleton3);
+  console.log(singleton1); // Singleton { version: '1.0' }
+  console.log(singleton2); // Singleton { version: '1.0' }
+  console.log(singleton3); // Singleton { version: '1.0' }
 
-  console.log(singleton1 === singleton2);
-  console.log(singleton1 === singleton3);
+  console.log(singleton1 === singleton2); // true
+  console.log(singleton1 === singleton3); // true
 };
 
 appSingleton();
