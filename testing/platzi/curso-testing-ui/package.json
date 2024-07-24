@@ -1,0 +1,17 @@
+{
+  "name": "cypress_ui_platzi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.13.1",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.3"
+  }
+}
