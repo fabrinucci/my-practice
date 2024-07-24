@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer');
 
-describe('Interact with the elements', () => {
+describe('Interact with elements', () => {
 	it('Inputs and click events', async () => {
 		const browser = await puppeteer.launch({
 			headless: false,

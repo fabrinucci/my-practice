@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer');
 
-describe('waitTypes', () => {
+describe('timeouts', () => {
 	jest.setTimeout(20000);
 	it('extract title and url', async () => {
 		const browser = await puppeteer.launch({
