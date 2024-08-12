@@ -1,0 +1,21 @@
+{
+  "name": "prueba-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/sinon": "^17.0.3",
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "fast-check": "^3.21.0",
+    "sinon": "^18.0.0"
+  }
+}
